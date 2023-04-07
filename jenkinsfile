@@ -19,15 +19,9 @@ pipeline
         {
             steps{
                 sh "chmod 777 c.sh"
-                sh "./c.sh"
-           
+                sh "./c.sh"           
             }
-            stage('calc')
-        {
-            steps{
-                sh "echo "poda sotta" "
-            }
-        }  
-        }       
+        }
+        
     }
 }
