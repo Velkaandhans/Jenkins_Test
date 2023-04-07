@@ -1,0 +1,33 @@
+pipeline
+{
+    agent any
+    stages 
+    {
+        stage('Git')
+        {
+            steps{
+                git 'https://github.com/Velkaandhans/Jenkins_Test.git'
+            }
+        }
+        stage('java')
+        {
+            steps {
+                sh "java hello1.java "
+            }
+        }
+        stage('calc')
+        {
+            steps{
+                sh "chmod 777 c.sh"
+                sh "./c.sh"
+           
+            }
+            stage('calc')
+        {
+            steps{
+                sh "echo "poda sotta" "
+            }
+        }  
+        }       
+    }
+}
