@@ -30,10 +30,4 @@ size=$(du -h /tmp/$name-httpd-logs-$timestamp.tar |awk '{print $1}')
 
 #appending inventory file
 echo -e "Httpd-logs\t$timestamp\ttar\t$size" >> /var/www/html/inventory.html
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
+
